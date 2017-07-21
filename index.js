@@ -48,7 +48,7 @@ function getSeriesData(arg){
               console.log(` Last Episode: ${lastEpisode.name} (Season ${lastEpisode.season}, Episode ${lastEpisode.number})`);
               console.log('\n');
             }
-            if(show._links.nextEpisode) {
+            if(show._links.nextepisode) {
               n = show._links.nextepisode.href.split('/');
               var nextEpisodeCode = n[n.length-1];
               status.start();
