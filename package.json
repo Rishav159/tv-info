@@ -1,0 +1,38 @@
+{
+  "name": "tv-info",
+  "version": "1.0.0",
+  "description": "\"CLI tool to get info about any tv-series\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rishav159/tv-info.git"
+  },
+  "keywords": [
+    "Tv-series",
+    "CLI",
+    "TV"
+  ],
+  "author": "Rishav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rishav159/tv-info/issues"
+  },
+  "homepage": "https://github.com/Rishav159/tv-info#readme",
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "clear": "0.0.1",
+    "clui": "^0.3.6",
+    "figlet": "^1.2.0",
+    "inquirer": "^3.2.0",
+    "minimist": "^1.2.0",
+    "preferences": "^0.2.1",
+    "touch": "^3.1.0",
+    "tv-maze": "^1.1.0"
+  },
+  "bin": {
+    "tv-info": "./index.js"
+  }
+}
