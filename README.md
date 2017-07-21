@@ -1,2 +1,4 @@
 # tv-info
-CLI app to get info about a tv-series.
+CLI app to get info about tv-series.
+
+Simple to Use.

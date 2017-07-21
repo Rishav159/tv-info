@@ -39,26 +39,37 @@ function getSeriesData(arg){
 
       if(show.status == 'Running') {
         status.start();
-        var n = show._links.previousepisode.href.split('/');
-        var lastEpisodeCode = n[n.length-1];
-        n = show._links.nextepisode.href.split('/');
-        var nextEpisodeCode = n[n.length-1];
-        client._request('/episodes/'+lastEpisodeCode,'GET',null,(err,lastEpisode) => {
-          client._request('/episodes/'+nextEpisodeCode,'GET',null,(err,nextEpisode) => {
+        if(show._links.previousepisode) {
+          var n = show._links.previousepisode.href.split('/');
+          var lastEpisodeCode = n[n.length-1];
+          client._request('/episodes/'+lastEpisodeCode,'GET',null,(err,lastEpisode) => {
             status.stop();
-            console.log(` Last Episode: ${lastEpisode.name} (Season ${lastEpisode.season}, Episode ${lastEpisode.number})`);
-            console.log('\n');
-            console.log(` Next Episode: ${nextEpisode.name} (Season ${nextEpisode.season}, Episode ${nextEpisode.number})`);
-            if(nextEpisode.summary) {
-              console.log(`${nextEpisode.summary.split(regEx).join('').trim()}`);
+            if(lastEpisode.name && lastEpisode.season && lastEpisode.number) {
+              console.log(` Last Episode: ${lastEpisode.name} (Season ${lastEpisode.season}, Episode ${lastEpisode.number})`);
               console.log('\n');
             }
-            if(nextEpisode.airstamp) {
-              console.log(` Airing on ${new Date(nextEpisode.airstamp)}`);
-              console.log("\n");
+            if(show._links.nextEpisode) {
+              n = show._links.nextepisode.href.split('/');
+              var nextEpisodeCode = n[n.length-1];
+              status.start();
+              client._request('/episodes/'+nextEpisodeCode,'GET',null,(err,nextEpisode) => {
+                status.stop();
+                //Next Episode Details
+                if(nextEpisode.name && nextEpisode.season && nextEpisode.number) {
+                  console.log(` Next Episode: ${nextEpisode.name} (Season ${nextEpisode.season}, Episode ${nextEpisode.number})`);
+                }
+                if(nextEpisode.summary) {
+                  console.log(`${nextEpisode.summary.split(regEx).join('').trim()}`);
+                  console.log('\n');
+                }
+                if(nextEpisode.airstamp) {
+                  console.log(` Airing on ${new Date(nextEpisode.airstamp)}`);
+                  console.log("\n");
+                }
+              });
             }
           });
-        });
+        }
       } else {
         var n = show._links.previousepisode.href.split('/');
         var lastEpisodeCode = n[n.length-1];
