@@ -15,30 +15,24 @@ $ tv-info "[Name of the series]"
 ```
 ## Examples
 ```shell
-$ tv-info "Game of Thrones"
+$ tv-info "Breaking Bad"
+
+____                 _    _               ____            _
+| __ ) _ __ ___  __ _| | _(_)_ __   __ _  | __ )  __ _  __| |
+|  _ \| '__/ _ \/ _` | |/ / | '_ \ / _` | |  _ \ / _` |/ _` |
+| |_) | | |  __/ (_| |   <| | | | | (_| | | |_) | (_| | (_| |
+|____/|_|  \___|\__,_|_|\_\_|_| |_|\__, | |____/ \__,_|\__,_|
+                                  |___/                     
+Average Rating : 9.3
+Genre : Drama,Crime,Thriller
 
 
-   ____                               __   _____ _                               
-  / ___| __ _ _ __ ___   ___    ___  / _| |_   _| |__  _ __ ___  _ __   ___  ___
- | |  _ / _` | '_ ` _ \ / _ \  / _ \| |_    | | | '_ \| '__/ _ \| '_ \ / _ \/ __|
- | |_| | (_| | | | | | |  __/ | (_) |  _|   | | | | | | | | (_) | | | |  __/\__ \
-  \____|\__,_|_| |_| |_|\___|  \___/|_|     |_| |_| |_|_|  \___/|_| |_|\___||___/
-
- Average Rating : 9.3
- Genre : Drama,Adventure,Fantasy
+Breaking Bad follows protagonist Walter White, a chemistry teacher who lives in New Mexico with his wife and teenage son who has cerebral palsy. White is diagnosed with Stage III cancer and given a prognosis of two years left to live. With a new sense of fearlessness based on his medical prognosis, and a desire to secure his family's financial security, White chooses to enter a dangerous world of drugs and crime and ascends to power in this world. The series explores how a fatal diagnosis such as White's releases a typical man from the daily concerns and constraints of normal society and follows his transformation from mild family man to a kingpin of the drug trade.
 
 
-Based on the bestselling book series A Song of Ice and Fire by George R.R. Martin, this sprawling new HBO drama is set in a world where summers span decades and winters can last a lifetime. From the scheming south and the savage eastern lands, to the frozen north and ancient Wall that protects the realm from the mysterious darkness beyond, the powerful families of the Seven Kingdoms are locked in a battle for the Iron Throne. This is a story of duplicity and treachery, nobility and honor, conquest and triumph. In the Game of Thrones, you either win or you die.
+Show Ended on 2013-09-29
+Last Episode: Felina (Season 5, Episode 16)
 
-
- Last Episode: Dragonstone (Season 7, Episode 1)
-
-
- Next Episode: Stormborn (Season 7, Episode 2)
-Daenerys receives an unexpected visitor. Jon faces a revolt. Tyrion plans the conquest of Westeros.
-
-
- Airing on Mon Jul 24 2017 06:30:00 GMT+0530 (IST)
 
 ```
 ## Contributing & Development
