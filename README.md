@@ -15,7 +15,7 @@ $ tv-info "[Name of the series]"
 ```
 ## Examples
 ```shell
-$ tv-info "Breaking Bad"
+$ tv-info "Breaking bad"
 
 ____                 _    _               ____            _
 | __ ) _ __ ___  __ _| | _(_)_ __   __ _  | __ )  __ _  __| |
